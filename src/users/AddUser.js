@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import {  useNavigate } from "react-router"
+import { Link, useNavigate } from "react-router-dom";
 
 export default function AddUser() {
   const navigate = useNavigate();
@@ -66,7 +66,7 @@ export default function AddUser() {
             </div>
 
             <button type='submit' className='btn btn-outline-primary'>Submit</button>
-            <button type='reset' className='btn btn-danger mx-2'>Reset</button> {/* Changed to reset instead of submit */}
+            <Link to="/" className='btn btn-danger mx-2'>Cancel</Link> {/* Changed to reset instead of submit */}
           </form>
         </div>
       </div>
